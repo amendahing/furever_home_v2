@@ -1,0 +1,75 @@
+@import "~scss/vars";
+
+// ------- NAV BAR ------- //
+#nav-bar {
+  width: 100%;
+  //   border: 1px solid red;
+  height: 40px;
+  box-sizing: border-box;
+
+  ul {
+    //     border: $test-b;
+    text-align: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+  }
+
+  li {
+    display: inline;
+    margin: 0px 10px;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+// ------- NEWSLETTER ------- //
+
+#newsletter {
+  background-color: #f4ebbc;
+  text-align: center;
+  padding: 30px;
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  input {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+  }
+
+  button {
+    height: 50px;
+    width: 120px;
+    border-radius: 5px;
+    font-family: $secondary-font;
+    font-size: 14px;
+    border: none;
+
+    &:hover {
+      background-color: red;
+    }
+  }
+}
+
+// ------- FOOTER ------- //
+
+#footer {
+  background-color: black;
+  padding: 20px 80px;
+  h1 {
+    color: white;
+  }
+  #social {
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}

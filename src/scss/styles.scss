@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./vars";
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+// ------- FONT -------  //
+h1,
+h2,
+li {
+  font-family: $main-font;
+}
+
+h3,
+p {
+  font-family: $secondary-font;
+}
+
+h1 {
+  font-size: 50px;
+}
