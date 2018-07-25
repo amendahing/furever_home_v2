@@ -1,16 +1,57 @@
 @import "~scss/vars";
 
+#adoption-info {
+  padding: 20px;
+
+  h2 {
+    display: inline;
+    // border: 1px solid black;
+  }
+
+  .adoption-drop-down {
+    // border: $test-b;
+    width: 60%;
+    display: none;
+
+    li {
+      padding-left: 35px;
+    }
+  }
+
+  .expand {
+    height: 30px;
+    width: 30px;
+    vertical-align: bottom;
+    background-image: url("../../assets/expand.png");
+    background-size: cover;
+    display: inline-block;
+  }
+
+  .collapse {
+    height: 30px;
+    width: 30px;
+    vertical-align: bottom;
+    background-image: url("../../assets/collapse.jpg");
+    background-size: cover;
+    display: inline-block;
+  }
+}
+
 #container {
-  padding: 40px;
+  // padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
 }
 
 #pet-snapshot {
+  justify-self: center;
   border: $border;
-  width: 30%;
+  width: 240px;
   text-align: center;
   line-height: 40px;
   display: inline-block;
-  margin-right: 20px;
+  // margin-right: 38px;
 
   img {
     width: 100%;
@@ -22,7 +63,7 @@
   }
 
   button {
-    background-color: #85673d;
+    background-color: $maroon;
     height: 40px;
     width: 50%;
     color: white;
@@ -31,7 +72,7 @@
     border-radius: 5px;
 
     &:hover {
-      background-color: red;
+      background-color: $gold;
     }
   }
 }
