@@ -1,19 +1,24 @@
 <div id="map">
+  <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
 
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
 </div>
+
+
 
 <div id="container">
   <div id="left-col">
     <div id="locations">
       <div class="address">
         <h2>San Lorenzo</h2>
-        <p>640 Via Mirabel,</p>
+        <p>1220 Grant St,</p>
         <p>San Lorenzo CA</p>
         <p>Main: +123 456 1232</p>
       </div>
       <div class="address">
         <h2>San Jose</h2>
-        <p>80 Montecito Vista</p>
+        <p>180 Montevisto Vista</p>
         <p>San Jose CA</p>
         <p>Main: +123 456 1232</p>
       </div>
@@ -27,7 +32,7 @@
   </div>
 
   <div id="right-col">
-    <img src="../../assets/contact.png" alt="">
+    <img src="../../assets/contact-4.jpg" alt="">
   </div>
 
 
