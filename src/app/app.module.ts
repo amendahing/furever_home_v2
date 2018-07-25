@@ -9,6 +9,7 @@ import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
 import { AdoptionComponent } from "./adoption/adoption.component";
 import { ContactComponent } from "./contact/contact.component";
+import { VolunteerComponent } from "./volunteer/volunteer.component";
 
 import { AdoptionService } from "./services/adoption.service";
 import { GmapService } from "./services/gmap.service";
@@ -18,7 +19,8 @@ import { GmapService } from "./services/gmap.service";
     AppComponent,
     AdoptionComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    VolunteerComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +32,7 @@ import { GmapService } from "./services/gmap.service";
       { path: "", component: HomeComponent },
       { path: "home", component: HomeComponent },
       { path: "adoption", component: AdoptionComponent },
+      { path: "volunteer", component: VolunteerComponent },
       { path: "contact", component: ContactComponent }
     ])
   ],
