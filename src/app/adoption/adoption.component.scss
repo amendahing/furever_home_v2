@@ -1,7 +1,13 @@
 @import "~scss/vars";
 
 #adoption-info {
-  padding: 20px;
+  width: 80%;
+  margin: 15px auto;
+  // border: 1px solid black;
+
+  h3 {
+    margin-bottom: 15px;
+  }
 
   h2 {
     display: inline;
@@ -10,11 +16,16 @@
 
   .adoption-drop-down {
     // border: $test-b;
-    width: 60%;
     display: none;
 
     li {
-      padding-left: 35px;
+      padding-left: 45px;
+      list-style-position: inside;
+    }
+
+    p {
+      padding-left: 45px;
+      font-family: $main-font;
     }
   }
 
@@ -37,8 +48,28 @@
   }
 }
 
+#search-pets {
+  text-align: center;
+  width: 60%;
+  border-radius: 5px;
+  height: 110px;
+  margin: 20px auto;
+  background-color: coral;
+
+  form {
+    position: relative;
+    top: 30px;
+  }
+
+  input {
+    // border: $maroon 1px solid;
+  }
+}
+
 #container {
   // padding: 40px;
+  width: 80%;
+  margin: 0px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 15px;
@@ -63,16 +94,19 @@
   }
 
   button {
-    background-color: $maroon;
+    border: #000 1px solid;
     height: 40px;
     width: 50%;
-    color: white;
+    color: black;
     font-family: $main-font;
     font-size: 16px;
     border-radius: 5px;
+    margin-bottom: 15px;
 
     &:hover {
-      background-color: $gold;
+      background-color: $orange;
+      color: white;
+      border: none;
     }
   }
 }

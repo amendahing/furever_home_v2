@@ -21,3 +21,27 @@ p {
 h1 {
   font-size: 50px;
 }
+
+// ------- ELEMENTS ----- //
+
+input {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+
+button {
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  font-family: $main-font;
+  font-size: 14px;
+  border: none;
+
+  &:hover {
+    background-color: $orange;
+    color: white;
+  }
+}

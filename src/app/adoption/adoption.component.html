@@ -1,8 +1,11 @@
+<h1 style="text-align: center"> Adoption</h1>
 <div id="adoption-info">
-      <!-- <p>http://www.haywardanimals.org/adoptions</p> -->
+      <h3>Since November 1992, we have saved over 13,000 animals and the numbers are growing every day—along with 6000+ Guardian,
+            Shelter and Rescue Assists! Our volunteer home foster about 120 dogs and cats (of all ages from young to senior
+            and special medical needs) year round. We rescue and find forever homes for about 1000 animals per year.</h3>
       <div class="expand" (click)="expandInfo(0)"></div>
       <h2>Adoption Info</h2>
-      <div class="adoption-drop-down">
+      <div class="adoption-drop-down" id="adoption-0">
             <ul>
                   <li>Adopted animals cannot go home until they are sterilized. Animals are sterilized after adoption on the
                         next available surgery date.</li>
@@ -13,7 +16,7 @@
       <br>
       <div class="expand" (click)="expandInfo(1)"></div>
       <h2>Dog Adoptions</h2>
-      <div class="adoption-drop-down">
+      <div class="adoption-drop-down" id="adoption-1">
             <p>Dog Adoption Fees:</p>
             <p>Male $158.50</p>
             <p>Female $193.50</p>
@@ -21,12 +24,20 @@
       <br>
       <div class="expand" (click)="expandInfo(2)"></div>
       <h2>Cat Adoptions </h2>
-      <div class="adoption-drop-down">
+      <div class="adoption-drop-down" id="adoption-2">
             <p>Cat Adoption Fees:</p>
             <p>Male $158.50</p>
             <p>Female $193.50</p>
       </div>
       <br>
+</div>
+
+<div id="search-pets">
+      <form action="">
+            <input type="text" placeholder="type">
+            <input type="text" placeholder="zipcode">
+            <button>Search</button>
+      </form>
 </div>
 
 <div id="container">
